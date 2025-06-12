@@ -19,7 +19,7 @@ const sendOTP = async (to, subject, msg) => {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
-      console.log("Mail not Sent")
+      console.log("Mail not Sent" , error)
     } else {
      console.log("Mail sent" )
     }
